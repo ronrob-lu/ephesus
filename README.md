@@ -3,6 +3,8 @@
 > **Bring the timeless grandeur of classical antiquity to Luanti & Minetest.**  
 > Handcrafted 16px Greco-Roman architectural blocks, authentic 3D marble columns, decorative capitals, imperial mosaics, and Mediterranean flora.
 
+> 🍴 This mod is a fork of [Ephesus by Horka](https://content.luanti.org/packages/Horka/ephesus/) on ContentDB.
+
 ---
 
 ## ✨ Features
