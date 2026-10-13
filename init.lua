@@ -100,7 +100,8 @@ local full_blocks = {
     {"cypress_planks", "Cypress Planks"},
     {"apricot_trunk_block", "Block of Cypres Trunk"},
     {"cypress_trunk_block", "Block of Apricot Trunk"},
-    {"olive_trunk_block", "Block of Apricot Trunk"}
+    {"olive_trunk_block", "Block of Apricot Trunk"},
+    {"fig_trunk_block", "Block of Fig Trunk"}
 }
 
 -- Leaves Blocks
@@ -143,6 +144,7 @@ local trunk_blocks = {
     {"cypress_trunk", "Cypress Trunk", "cypress_trunk_top.png", "cypress_trunk_top.png", "cypress_trunk.png"},
     {"apricot_trunk", "Apricot Trunk", "apricot_trunk_top.png", "apricot_trunk_top.png", "apricot_trunk.png"},
     {"olive_trunk", "Olive Trunk", "olive_trunk_top.png", "olive_trunk_top.png", "olive_trunk.png"},
+    {"fig_trunk", "Fig Trunk", "fig_trunk_top.png", "fig_trunk_top.png", "fig_trunk.png"},
 }
 
 
@@ -508,3 +510,6 @@ end
 
 
 
+
+-- Saplings and tree growth
+dofile(minetest.get_modpath("ephesus") .. "/saplings.lua")
