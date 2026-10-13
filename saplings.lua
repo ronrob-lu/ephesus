@@ -116,7 +116,7 @@ function ephesus_grow_tree(pos, kind)
     local def = tree_defs[kind]
     if not def then return false end
     local h = def.height()
-    if not can_grow(pos, h + 3) then
+    if not can_grow(pos, h) then
         return false
     end
     minetest.remove_node(pos)
@@ -152,18 +152,19 @@ for kind, desc in pairs(descriptions) do
         sounds = sound_plant,
 
         on_construct = function(pos)
-            minetest.get_node_timer(pos):start(math.random(300, 1500))
+            minetest.get_node_timer(pos):start(math.random(120, 400))
         end,
 
         on_timer = function(pos)
+            local timer = minetest.get_node_timer(pos)
             local light = minetest.get_node_light(pos)
             if not light or light < 9 then
-                return true -- too dark, retry later
+                timer:start(30) -- too dark, retry soon
+                return
             end
             if not ephesus_grow_tree(pos, kind) then
-                return true -- blocked or bad soil, retry later
+                timer:start(30) -- blocked or bad soil, retry soon
             end
-            return false
         end,
 
         on_place = function(itemstack, placer, pointed_thing)
