@@ -46,18 +46,13 @@ Whether you are erecting a grand Roman forum, a hilltop Greek pantheon, a lavish
 
 ## 📦 Installation
 
-### Via ContentDB (Recommended)
-1. Open Luanti / Minetest.
-2. Go to the **Content** tab.
-3. Search for **Ephesus** and click **Install**.
-
-### Manual Installation
-1. Download or clone this repository.
-2. Extract the folder into your Luanti `mods/` directory:
+1. Copy or extract this `ephesus` folder into your Luanti / Minetest `mods/` directory:
    * **Linux:** `~/.minetest/mods/ephesus`
    * **Windows:** `<minetest_install_dir>\mods\ephesus`
    * **macOS:** `~/Library/Application Support/minetest/mods/ephesus`
-3. Enable the mod in your world configuration menu!
+2. Launch Luanti / Minetest.
+3. Select your world (**Minetest Game**, **VoxeLibre**, or **Mineclonia**).
+4. Click **Select Mods** / **Configure**, enable **Ephesus**, and save!
 
 ---
 
